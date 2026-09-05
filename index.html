@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NEXUS — Premium Gaming Marketplace</title>
+<meta name="description" content="NEXUS gaming and creator marketplace for games, Minecraft content, servers, plugins and digital products.">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="noise"></div>
+<header class="nav"><a class="brand" href="index.html"><span>✦</span>NEXUS</a>
+<nav><a href="#discover">Discover</a><a href="#minecraft">Minecraft</a><a href="#servers">Servers</a><a href="#publish">Publish</a></nav>
+<div class="actions"><button class="search-btn" onclick="focusSearch()">⌕ Search</button><a class="ghost" href="login.html">Sign in</a><a class="primary small" href="register.html">Join</a></div>
+<button class="menu" onclick="toggleMenu()">☰</button></header>
+<main>
+<section class="hero" id="home"><div class="hero-grid"></div><div class="hero-copy">
+<div class="eyebrow"><i></i> THE CREATOR MARKETPLACE</div><h1>BUILD.<br><em>PLAY.</em><br>SELL.</h1>
+<p>One premium marketplace for games, Minecraft add-ons, maps, servers, plugins and digital creator products.</p>
+<div class="hero-buttons"><a class="primary" href="#discover">Explore marketplace ↗</a><a class="outline" href="#publish">Become a publisher →</a></div></div>
+<div class="hero-card"><div class="hero-top"><span>FEATURED DROP</span><span>01 / 04</span></div><div class="cube">N</div><div class="hero-product"><span class="tag">GAME</span><h3>NEON // RIFT</h3><p>Fast. Competitive. Unforgiving.</p><b>₹299</b></div></div>
+<div class="scroll">SCROLL ↓</div></section>
+<div class="ticker">GAMES · MINECRAFT ADD-ONS · MAPS · SERVERS · PLUGINS · ASSETS · CREATOR TOOLS ·</div>
+<section class="section" id="discover"><div class="section-head"><div><span class="eyebrow">01 / DISCOVER</span><h2>Find your next <em>world.</em></h2></div><p>Discover digital products from independent publishers and creators.</p></div>
+<div class="category-row"><button class="cat active" data-filter="all">All</button><button class="cat" data-filter="game">Games</button><button class="cat" data-filter="minecraft">Minecraft</button><button class="cat" data-filter="server">Servers</button><button class="cat" data-filter="addon">Add-ons</button></div>
+<div class="searchbar">⌕ <input id="search" oninput="filterProducts()" placeholder="Search games, servers, maps, add-ons..."><kbd>CTRL K</kbd></div>
+<div class="product-grid">
+<article class="product" data-type="game" data-name="Neon Rift"><div class="product-art neon"><span>NR</span><label>GAME</label></div><div class="product-info"><div><h3>Neon // Rift</h3><p>Competitive arena shooter</p></div><strong>₹299</strong></div><div class="meta">★ 4.9 · 2.4k sales <button onclick="buy('Neon // Rift','₹299')">View →</button></div></article>
+<article class="product" data-type="minecraft addon" data-name="Mythic Creatures"><div class="product-art myth"><span>MC</span><label>ADD-ON</label></div><div class="product-info"><div><h3>Mythic Creatures</h3><p>42 custom mobs · Bedrock</p></div><strong>₹149</strong></div><div class="meta">★ 4.8 · 8.1k sales <button onclick="buy('Mythic Creatures','₹149')">View →</button></div></article>
+<article class="product" data-type="server" data-name="Aether Network"><div class="product-art aether"><span>AX</span><label>SERVER</label></div><div class="product-info"><div><h3>Aether Network</h3><p>Survival + economy server</p></div><strong>₹499</strong></div><div class="meta">★ 5.0 · 1.7k sales <button onclick="buy('Aether Network','₹499')">View →</button></div></article>
+<article class="product" data-type="minecraft addon" data-name="Cyber Blocks"><div class="product-art cyber"><span>CB</span><label>ADD-ON</label></div><div class="product-info"><div><h3>Cyber Blocks</h3><p>Tech furniture & machines</p></div><strong>₹99</strong></div><div class="meta">★ 4.7 · 4.2k sales <button onclick="buy('Cyber Blocks','₹99')">View →</button></div></article>
+<article class="product" data-type="game" data-name="Driftline"><div class="product-art drift"><span>DL</span><label>GAME</label></div><div class="product-info"><div><h3>Driftline</h3><p>Arcade street racing</p></div><strong>₹249</strong></div><div class="meta">★ 4.9 · 3.6k sales <button onclick="buy('Driftline','₹249')">View →</button></div></article>
+<article class="product" data-type="server" data-name="Voidlands"><div class="product-art void"><span>VL</span><label>SERVER</label></div><div class="product-info"><div><h3>Voidlands</h3><p>Skyblock · cross-play</p></div><strong>₹399</strong></div><div class="meta">★ 4.8 · 5.9k sales <button onclick="buy('Voidlands','₹399')">View →</button></div></article>
+</div></section>
+<section class="manifesto" id="minecraft"><div class="manifesto-visual"><div>+</div><small>MINECRAFT / BEDROCK / JAVA</small></div><div class="manifesto-copy"><span class="eyebrow">02 / FOR CREATORS</span><h2>Your world.<br><em>Your rules.</em></h2><p>Publish maps, behavior packs, resource packs, add-ons and server products. Set your price, upload your files and build your audience.</p><a class="outline" href="#publish">Start publishing →</a></div></section>
+<section class="stats"><div><strong>12K+</strong><span>CREATORS</span></div><div><strong>48K+</strong><span>PRODUCTS</span></div><div><strong>₹2.4Cr+</strong><span>CREATOR SALES</span></div><div><strong>97</strong><span>COUNTRIES</span></div></section>
+<section class="publish-section" id="publish"><div><span class="eyebrow">03 / PUBLISH</span><h2>Turn your<br><em>creation</em> into a business.</h2><p>Upload once. Reach players everywhere. Track your products from a creator dashboard.</p></div>
+<form class="publish-card" onsubmit="submitPublish(event)"><div class="form-head">NEW PRODUCT <span>01 — 04</span></div><label>Product name<input id="pname" required placeholder="e.g. Skyblock Legends"></label><div class="two"><label>Category<select><option>Game</option><option>Minecraft Add-on</option><option>Server</option><option>Map</option><option>Plugin</option></select></label><label>Price (₹)<input type="number" min="0" required placeholder="299"></label></div><label>Description<textarea required placeholder="Tell players what makes your creation special..."></textarea></label><label class="upload">＋ <span>Drop your files here</span><small>ZIP, APK, MCADDON, MCWORLD · max 500 MB</small><input type="file" hidden></label><button class="primary full">Create publisher listing →</button></form></section>
+<section class="server-section" id="servers"><div class="section-head"><div><span class="eyebrow">04 / SERVERS</span><h2>Power the <em>community.</em></h2></div><p>Server owners can showcase premium worlds, plugins and experiences.</p></div><div class="server-row">
+<div class="server-card"><i></i><div><b>AETHER NETWORK</b><small>Survival · 1.20+</small></div><strong>1,284 <small>players</small></strong><button onclick="showToast('Server page coming soon')">View</button></div>
+<div class="server-card"><i></i><div><b>VOIDLANDS</b><small>Skyblock · Bedrock</small></div><strong>847 <small>players</small></strong><button onclick="showToast('Server page coming soon')">View</button></div>
+<div class="server-card"><i></i><div><b>PIXEL REALMS</b><small>RPG · Cross-play</small></div><strong>623 <small>players</small></strong><button onclick="showToast('Server page coming soon')">View</button></div>
+</div></section>
+<section class="cta"><span class="eyebrow">NEXUS FOR PUBLISHERS</span><h2>Make something people<br><em>can't stop playing.</em></h2><a class="primary" href="register.html">Open your store →</a></section>
+</main>
+<footer><a class="brand" href="index.html">✦ NEXUS</a><p>THE MARKETPLACE FOR DIGITAL WORLDS.</p><div><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a><a href="dashboard.html">Dashboard</a></div><small>© 2026 NEXUS. Demo marketplace.</small></footer>
+<div class="modal" id="modal"><div class="modal-box"><button class="close" onclick="closeModal()">×</button><div id="modalContent"></div></div></div><div class="toast" id="toast"></div>
+<script src="script.js"></script></body></html>
